@@ -7,7 +7,7 @@ public class Ejercicio10_imc {
 		Scanner entrada = new Scanner(System.in);
 		
 		float peso, altura;
-		float imc;
+		double imc;
 		
 		System.out.println("Introduce tu peso");
 		peso = entrada.nextFloat();
@@ -15,7 +15,7 @@ public class Ejercicio10_imc {
 		System.out.println("Introduce la altura");
 		altura = entrada.nextFloat();
 		
-		 imc = peso/(altura)2;
+		 imc = Math.round(peso/Math.pow(altura, altura));
 		
 		System.out.println("IMC:" + imc);
 
