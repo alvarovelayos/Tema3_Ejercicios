@@ -24,7 +24,6 @@ public class Ejercicio12_ordena_dos_numeros {
 			b = num1;
 		} 	
 		
-		
 		System.out.println("Numeros ordenados " + a + " " + b);
 	}
 }
