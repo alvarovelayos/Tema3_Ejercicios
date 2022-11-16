@@ -56,16 +56,23 @@ public class Ejercicio6_menu {
 		case 3:
 			System.out.println("Mostrar numeros comprendidos");
 			
-			int nume1, nume2;
+			int nume1, nume2 = 0;
 			
 			Scanner entradaComprendidos = new Scanner(System.in);
 			System.out.println("Introduce el primer numero");
 			nume1 = entradaComprendidos.nextInt();
-			System.out.println("Introduce el segundo numero");
-			nume2 = entradaComprendidos.nextInt();
 			
-			while (nume1 >= nume2) {
-				System.out.println
+			
+			while (nume1>=nume2) {
+				System.out.println("Introduce el segundo numero");
+				nume2 = entradaComprendidos.nextInt();
+			}
+			
+			System.out.println("Los numeros comprendidos entre " + nume2 + " " + nume1);
+			
+			while (nume2 >= nume1) {
+				System.out.println(nume2);
+				nume2 = nume2 -1;
 			}
 			
 			
@@ -74,6 +81,8 @@ public class Ejercicio6_menu {
 		case 4:
 			System.out.println("Hasta pronto.......");
 			break;
+			default:
+				System.out.println("La opcion elegida no esta disponible escriba del 1 al 4");
 			
 		}
 		
