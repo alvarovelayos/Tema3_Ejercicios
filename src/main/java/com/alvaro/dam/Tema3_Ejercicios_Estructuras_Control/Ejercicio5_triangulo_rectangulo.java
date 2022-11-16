@@ -3,21 +3,21 @@ import java.util.Scanner;
 
 public class Ejercicio5_triangulo_rectangulo {
 	public static void main(String[] args) {
-		  
+		int i, j, k;
+		int altura = 0;
+		int espacios = altura - 1;
 		int asteriscos = 1;
-	    int espacios = ancho - 1;
-	    int ancho;
 	    
 	    Scanner entrada = new Scanner(System.in);
 	    
 	    System.out.println("Dime el ancho del triangulo");
-	    ancho = entrada.nextInt();
+	    altura = entrada.nextInt();
 	    
-	        for (int fila = 0; fila < ancho; fila++) {
-	            for (int columnaEspacios = 0; columnaEspacios < espacios; columnaEspacios++)  {
+	        for (i = 0; i < altura; i++) {
+	            for (j = 0; j < espacios; j++)  {
 	                System.out.print(" ");
 	            }
-	            for (int columnaAsteriscos = 0; columnaAsteriscos < asteriscos; columnaAsteriscos++) {
+	            for (k = 0; k < asteriscos; k++) {
 	                System.out.print("*");
 	            }
 	            System.out.println();
@@ -25,4 +25,7 @@ public class Ejercicio5_triangulo_rectangulo {
 	            asteriscos ++;
 	            espacios --;
 	            
-}
+	        }
+		}
+	}
+	
