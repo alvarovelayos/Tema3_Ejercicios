@@ -1,4 +1,4 @@
-package com.alvaro.dam.Tema3_Ejercicios_Estructuras_Control.copy;
+package com.alvaro.dam.Tema3_Ejercicios_Estructuras_Control;
 import java.util.Scanner;
 
 public class Ejercicio1_media {
