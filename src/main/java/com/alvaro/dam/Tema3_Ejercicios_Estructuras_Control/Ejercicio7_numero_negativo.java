@@ -23,6 +23,7 @@ public class Ejercicio7_numero_negativo {
 			}
 		} while (num > 0);
 		
+		numAnterior = num;
 	 if (salida>0) {
 		 System.out.println("Si");
 	 } else {
